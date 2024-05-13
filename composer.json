@@ -1,0 +1,16 @@
+{
+    "name": "ahmedmi/cms",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Ahmedmi\\": "src/Ahmedmi"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ahmad-Mohamad-Ibrahim",
+            "email": "ahmadmohamadibrahim11@gmail.com"
+        }
+    ],
+    "require": {}
+}
