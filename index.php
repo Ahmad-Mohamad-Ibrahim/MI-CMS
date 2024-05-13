@@ -45,6 +45,10 @@ $router->get("/logout", function () {
     require "logout.php";
 });
 
+$router->post("/login", function () use($db) {
+    require "login.php";
+});
+
 // not sure using use here is the best idea
 $router->get("/login", function () use($db) {
     require "login.php";

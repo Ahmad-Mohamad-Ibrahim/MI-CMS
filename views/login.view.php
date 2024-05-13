@@ -1,4 +1,3 @@
-
 <div class="container d-flex justify-content-center mt-5">
     <div class="row col-6">
         <form method="POST" action="login">
@@ -29,7 +28,11 @@
                     <a href="#!">Forgot password?</a>
                 </div>
             </div>
-
+            <div class="clo">
+                <?php if (isset($msg)) : ?>
+                    <p class="text-danger"><?= $msg ?></p>
+                <?php endif ?>
+            </div>
             <!-- Submit button -->
             <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block">Sign in</button>
         </form>

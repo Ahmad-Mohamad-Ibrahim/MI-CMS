@@ -28,6 +28,13 @@ class Helpers
         require "controllers/{$code}.php"; // different views for different status codes
         die();
     }
+
+    static function setLoginErrorMsg() {
+        if($_SESSION['loginError']) {
+            $_SESSION['loginError'] = false;
+            return "Error failed to login";
+        }
+    }
     
     
 }
